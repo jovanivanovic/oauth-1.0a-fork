@@ -16,6 +16,7 @@ declare class OAuth {
   signature_metho: string
   version: string
   timestamp: number
+  nonce: string
 
   constructor(opts?: OAuth.Options)
 
@@ -177,6 +178,7 @@ declare namespace OAuth {
     signature_method?: string
     version?: string
     timestamp: number
+    nonce: string
   }
 
   /**

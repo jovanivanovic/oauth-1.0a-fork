@@ -25,6 +25,7 @@ function OAuth(opts) {
   this.parameter_seperator = opts.parameter_seperator || ', '
   this.realm = opts.realm
   this.timestamp = opts.timestamp || new Date().getTime()
+  this.nonce = opts.nonce || this.getNonce()
 
   if (typeof opts.last_ampersand === 'undefined') {
     this.last_ampersand = true
@@ -63,7 +64,7 @@ function OAuth(opts) {
 OAuth.prototype.authorize = function (request, token) {
   var oauth_data = {
     oauth_consumer_key: this.consumer.key,
-    oauth_nonce: this.getNonce(),
+    oauth_nonce: this.nonce,
     oauth_signature_method: this.signature_method,
     oauth_timestamp: this.timestamp,
     oauth_version: this.version,
