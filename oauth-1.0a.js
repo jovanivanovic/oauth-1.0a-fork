@@ -65,15 +65,25 @@ function OAuth(opts) {
  * @return {Object} OAuth Authorized data
  */
 OAuth.prototype.authorize = function (request, token) {
-  var oauth_data = {
-    oauth_consumer_key: this.consumer.key,
-    oauth_nonce: this.nonce,
-    oauth_signature_method: this.signature_method,
-    oauth_timestamp: this.timestamp,
-    oauth_version: this.version,
-    oauth_verifier: this.verifier,
-    oauth_token: this.token,
-    oauth_secret: this.secret,
+  if (this.verifier) {
+    var oauth_data = {
+      oauth_consumer_key: this.consumer.key,
+      oauth_nonce: this.nonce,
+      oauth_signature_method: this.signature_method,
+      oauth_timestamp: this.timestamp,
+      oauth_version: this.version,
+      oauth_verifier: this.verifier,
+      oauth_token: this.token,
+      oauth_secret: this.secret,
+    }
+  } else {
+    var oauth_data = {
+      oauth_consumer_key: this.consumer.key,
+      oauth_nonce: this.nonce,
+      oauth_signature_method: this.signature_method,
+      oauth_timestamp: this.timestamp,
+      oauth_version: this.version,
+    }
   }
 
   if (!token) {
