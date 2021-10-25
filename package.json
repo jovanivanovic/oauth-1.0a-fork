@@ -1,13 +1,13 @@
 {
-    "name": "oauth-1.0a",
-    "version": "2.2.6",
+    "name": "@call203/oauth-1.0a",
+    "version": "0.0.1",
     "description": "OAuth 1.0a Request Authorization for Node and Browser.",
     "scripts": {
         "test": "mocha"
     },
     "main": "oauth-1.0a.js",
     "types": "oauth-1.0a.d.ts",
-    "repository": "https://github.com/ddo/oauth-1.0a.git",
+    "repository": "https://github.com/call203/oauth-1.0a.git",
     "keywords": [
         "oauth",
         "1.0a",
@@ -17,7 +17,7 @@
         "nonce",
         "consumer"
     ],
-    "author": "Ddo",
+    "author": "call203",
     "license": "MIT",
     "devDependencies": {
         "chai": "^4.1.2",
@@ -25,6 +25,7 @@
         "dotenv": "^8.0.0",
         "istanbul": "^0.4.5",
         "mocha": "^6.1.4",
+        "my-forked-plugin": "https://github.com/call203/oauth-1.0a.git",
         "request": "^2.88.0"
     }
 }
