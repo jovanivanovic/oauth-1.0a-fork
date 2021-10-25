@@ -27,8 +27,8 @@ function OAuth(opts) {
   this.timestamp = opts.timestamp || new Date().getTime()
   this.nonce = opts.nonce || this.getNonce()
   this.token = opts.token || null
-  this.secret = opts.secret ||null
-  this.verifier = opts.verifier ||null
+  this.secret = opts.secret || null
+  this.verifier = opts.verifier || null
 
   if (typeof opts.last_ampersand === 'undefined') {
     this.last_ampersand = true
@@ -71,9 +71,9 @@ OAuth.prototype.authorize = function (request, token) {
     oauth_signature_method: this.signature_method,
     oauth_timestamp: this.timestamp,
     oauth_version: this.version,
-    oauth_verifier?: this.verifier,
-    oauth_token?: this.token,
-    oauth_secret?: this.secret,
+    oauth_verifier: this.verifier,
+    oauth_token: this.token,
+    oauth_secret: this.secret,
   }
 
   if (!token) {

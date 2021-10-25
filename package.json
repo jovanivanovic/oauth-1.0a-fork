@@ -1,6 +1,6 @@
 {
     "name": "@freeyeon2/oauth-1.0a",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "OAuth 1.0a Request Authorization for Node and Browser.",
 
     "scripts": {
