@@ -1,8 +1,7 @@
 {
-    "name": "@freeyeon2/oauth-1.0a",
+    "name": "oauth-1.0a-fork",
     "version": "0.0.5",
     "description": "OAuth 1.0a Request Authorization for Node and Browser.",
-
     "scripts": {
         "test": "mocha"
     },
@@ -10,7 +9,7 @@
     "types": "oauth-1.0a.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/call203/oauth-1.0a.git"
+        "url": "https://github.com/jovanivanovic/oauth-1.0a-fork.git"
       },
     "keywords": [
         "oauth",
@@ -21,8 +20,7 @@
         "nonce",
         "consumer"
     ],
-
-    "author": "freeyeon2",
+    "author": "jovanivanovic",
     "license": "MIT",
     "devDependencies": {
         "chai": "^4.1.2",
@@ -32,7 +30,4 @@
         "mocha": "^6.1.4",
         "request": "^2.88.0"
     }
-
-
-
 }
