@@ -151,7 +151,6 @@ declare namespace OAuth {
     oauth_signature_method: string
     oauth_timestamp: number
     oauth_version: string
-    oauth_token?: string
     oauth_body_hash?: string
     oauth_verifier?: string
     oauth_token?: string
