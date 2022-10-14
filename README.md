@@ -1,4 +1,4 @@
-# OAuth 1.0a Request Authorization [![semaphore][semaphore-img]][semaphore-url]
+# OAuth 1.0a Request Authorization
 
 [![Join the chat at https://gitter.im/ddo/oauth-1.0a](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ddo/oauth-1.0a?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![version][version-img]][version-url]
@@ -17,8 +17,6 @@
 [dependency-url]: https://david-dm.org/ddo/oauth-1.0a
 [coverage-img]: https://img.shields.io/coveralls/ddo/oauth-1.0a/master.svg?style=flat-square
 [coverage-url]: https://coveralls.io/r/ddo/oauth-1.0a?branch=master
-[climate-img]: https://img.shields.io/codeclimate/github/ddo/oauth-1.0a.svg?style=flat-square
-[climate-url]: https://codeclimate.com/github/ddo/oauth-1.0a
 
 OAuth 1.0a Request Authorization for **Node** and **Browser**
 
